@@ -1,0 +1,131 @@
+/* TABLET */
+header.section .inner{
+    max-width: none; /*왜 이걸 해주냐? 기존에 우리가 width대신 max-width를 사용해서
+    이를 초기화 시켜주는 것이다.근데 이 태그 .클래스(header .inner)선택자로는 기존의 설정을 덮어쓰지 못한다.
+    기존의 설정은 .클래스 .클래스 선택자가(.section .inner) 사용되었는데 이때 명시도는 10 + 10 =>20
+    태그 .클래스 선택자의 명시도는 1 + 10 => 11 이처럼 우선순위가 더 낮기 때문에 설정 적용이 안된다*
+    그러므로 명시도를 높여 우선순위를 높이기 위해 header.section .inner로 .section선택자를 추가해준다.*/
+    height: auto; /*메뉴 토글을 누르면 height가 늘어나기 때문에 fix 하면 안됨*/
+    padding: 0 20px;
+}
+header .menu-group, /*다중 선택자 사용시 가시성 떨어지니까 줄바꾸기*/
+header .sign-group{
+    float: none; /*좌 우로 나눴던 메뉴가 수직으로 흘러야 하니 기존의 float 없앰*/
+
+}
+header .menu-group{
+    display: block;
+}
+header .logo{
+    padding : 12px 0;
+    /* header의 높이를 auto로 설정해서 header높이 == logo높이 인 상태다.
+    그래서 밑에 추가한 토글 버튼이 잘리는 현상이 발생한다. 이를 수정하고자
+    padding값을 넣어준 것 */
+}
+header .main-menu{
+    display : block;
+    margin-bottom: 10px;
+}
+header .main-menu li{
+    border-top: 1px solid #e5e5e5;
+}
+header .main-menu li a{
+    padding : 16px 0;
+}
+header .sign-group{
+    display: block; /*위에서 순서 정의한 order은 display flex일 경우 적용되는 속성이다. 
+    그러므로 block이 된 지금은 html에 적용된 순서대로 출력된다*/
+    padding: 10px 0 20px;
+}
+header .btn-group{
+    display: block;
+}
+header .btn-group .btn{
+    justify-content: center;
+}
+header .btn-group .sign-in{
+    margin-right: 0;
+    margin-bottom: 12px;
+}
+#search-form{
+    margin-top: 12px;
+    margin-right: 0;
+
+}
+#search{
+    width: 100%;
+    height: 42px;
+    text-align: center;
+}
+header .sub-menu{
+    margin-left: 12px;
+    margin-right: 0;
+    justify-content: center;
+}
+header .toggle{
+    display : none;
+}
+/* toggle과 on 이 있는 요소일 경우 마우스 클릭 시 숨겨놨던 메뉴들을 출력하게 만들기 위함 */
+header .toggle.on{
+    display : block;
+}
+#toggle-btn{
+    display: block;
+}
+/* VISUAL */
+.section__visual{
+    /* 깃허브 마스코트가 잘 보이도록 설정된 배경 까쥐~ */
+    background-image: url(../img/bg-small.jpg);
+}
+.section__visual .inner{
+    display: block;
+    max-width: none;
+    padding: 80px 20px;
+}
+.section__visual .summary{
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 50px;
+}
+#sign-form{
+    width: auto;
+    max-width: 500px;
+    margin:0 auto;
+}
+
+/* FEATURE */
+.section--feature .summary{
+    padding : 66px 20px 0 20px;
+}
+.section--feature .tiles li{
+    width: 50%;
+}
+.section--feature .tiles li:nth-child(2){
+    border-right: none;
+}
+.section--feature .tiles li img{
+    padding : 14px 30% 24px;
+}
+
+/* WHERE is */
+.section--where-is .inner{
+    max-width: none;
+    padding: 80px 20px 0 20px;
+}
+
+/* PRICING CARD */
+.section--pricing .inner{
+    max-width: none;
+    padding: 80px 20px;
+}
+.section--pricing .card .cell2{
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer .inner{
+    padding : 50px 20px;
+}
+footer .logo{
+    display : none;
+}

@@ -1,0 +1,7 @@
+* BEM(block element modifier)
+보통 CSS 작명 규칙으로 사용(절대적인건 아니지만 가독성을 높여줌)
+__  : ~의 일부분을 의미 예) body의 일부분인 container : body__container
+
+-- : ~의  상태를 의미 예) btn--danger , btn--success
+
+- : (일반적인 작명)통짜이름에 띄어쓰기가 있을 겨우 예) toggle-btn

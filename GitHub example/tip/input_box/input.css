@@ -1,0 +1,26 @@
+.input--text{
+    height: 34px;
+    padding:0 10px;
+    border : 1px solid #ddd;
+    border-radius : 5px;
+    box-sizing : border-box;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075); 
+    font-size : 16px;
+  }
+  
+  .input--text:focus {
+    border-color : #51a7e8;
+  /*   focus시 원래 그림자를 덮었는걸 방지하기 위해 원래 설정과 동일하게 그림자를 유지하는 것을 추가해준다. 그림자는 다중 설정이 가능하다 */
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075),
+      0 0 5px rgba(81,167,232,0.5);
+  }
+  /* Venfor PRefix : 브라우저 업체별 접두사
+  웹브에선 브라우저 내에서 실험적으로 사용할만한 기능 제공
+  chrome은 webkit접두사 사용하면 동작이 된다. */
+  /* 즉 이 접두사 붙이면 실험적인 기능을 해당 브라우저에서 사용 가능하다. 원래는 input-placeholer같은건 없다 */
+  .input--text::-webkit-input-placeholder{ color : #cacaca; }
+  /* ms: IE , edge */
+  .input--text::-ms-input-placeholder{ color : red; }
+  /*  moz : firefox */
+  .input--text::-moz-input-placeholder{ color : red; } 

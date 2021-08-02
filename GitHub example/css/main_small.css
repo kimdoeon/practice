@@ -1,0 +1,55 @@
+/* MEDIA */
+/* MOBILE */
+
+/* COMMON */
+.summary__title{
+    /* 명시도 문제로 특정 요소에만 적용되지 않는 경우 발생
+    !important를 통해 우선순위를 높여주자 */
+    font-size: 34px !important;
+}
+.summary__description{
+    font-size: 22px;
+}
+
+/* FEATURE */
+.section--feature .tiles li{
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* WHERE iS */
+#map{
+    /* width : 100%가 아니라 auto로 초기화 하는 이유
+    => margin을 좌우에 주고 싶은데 100%는 부모 요소의 가로 너비에 영향을 받는다.
+    이 때 map의 부모 요소인 inner가 padding?으로 인해 가로 너비가 좁은 상태.
+    그러므로 온전한 브라우저의 가로 사이즈를 이용하기 위해선 auto로 설정해야 한다. */
+    width: auto;
+    /* medium.css에서 whereis inner에 좌우 padding 20px을 정의하였다. 이를 summary엔 적용하는데
+    map은 꽉 찬 화면으로 보고 싶다. 그러므로 -20px을 좌우에 설정한다. */
+    margin: 40px -20px 0 -20px;
+    border-left: none;
+    border-right: none;
+}
+
+/* PRICING */
+.section--pricing .card{
+    display: block;
+}
+.section--pricing .card .cell2{
+    border-left: none;
+    border-top : 1px solid #e5e5e5;
+}
+
+/* FOOTER */
+footer .site-links{
+    display: block;
+    float : none;
+    text-align: center;
+}
+footer .site-links:first-child{
+    margin-bottom: 20px;
+}
+footer .site-links li{
+    display: inline;
+}

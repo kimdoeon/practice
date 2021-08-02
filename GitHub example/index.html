@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub</title>
+    <meta name="author" content="kimdoeon">
+    <meta name="description" content="GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.">
+    
+    <!-- width=device-width : 디바이스 너비 그대로 사용하겠다 -->
+    <!-- initial-scale=1 : 다양한 디바이스의 초기 화면 값. 화면에 들어갔을 때 
+    페이지가 확대되어 있거나 축소되어 있는 걸 원치 않음 그래서 값 1로 설정 -->
+    <!-- user-scalable=no : 유저가 손가락으로 확대/축소하는 기능을 사용하지 않겠다.
+    (이로 인한 레이아웃 붕괴를 막기 위함) -->
+    <!-- maximum-scale=1, minimum-scale=1 : 원래 최대,최소 확대 비율을 설정할 수 있는데
+    나는 유저 확대를 막았으니 최대==최소==1로 하겠음 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1 ">
+    <!-- IE 렌더링에 관한 코드 (IE=edge : IE를 최신 상태로 유지하겠음)  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+    <!-- property="og(open graph:정보를 의미):type content=website: 정보가 타입이고 타입은 웹사이트다
+    og를 통해 사이트가 외부에 제공할 정보를 정의. 밑과 같은 식으로
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GitHub">
+    <meta property="og:description" content="~~~">
+    **보통 og는 페이스북에서 활용, Twitter Card는 트위터에서 활용**
+    <meta property="twitter:title" content="GitHub"> -->
+    <!-- http://ogp.me/ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GitHub">
+    <meta property="og:title" content="Build software better, together">
+    <meta property="og:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <meta property="og:image" content="img/logo__github.png">
+    <meta property="og:url" content="https://github.com">
+    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="GitHub">
+    <meta property="twitter:title" content="Build software better, together">
+    <meta property="twitter:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <meta property="twitter:image" content="img/logo__github.png">
+    <meta property="twitter:url" content="https://github.com">
+
+    <!-- favicon(favorite icon) : 사이트를 대표하는 아이콘 (탭에 표시되는 아이콘)-->  
+    <link rel="icon" href="favicon.png">
+    <!-- 스마트폰에 파비콘 제공시 필요한 명령어 -->
+    <link rel="apple-touch-icon" href="favicon.png">
+    <!-- IE에 파비콘 제공시 사용하는 명령어. 근데 IE는 root에 .ico파일이 있으면
+    이 명령어가 없어도 자동으로 가져다 쓴다
+    <link rel="shortcut icon" type="img/x-icon" href="favicon.ico">-->
+
+    <!--google font에서 가져온 폰트 링크-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- 브라우저 초기화 하는 reset.css파일 항상 우리의 css파일보다
+    먼저 호출되어야 함! 안그럼 우리 파일을 덮어씀
+    <link rel="stylesheet" href="./css/reset.css">-->
+    <!-- 항상 reset.css만들기 번거로우니 인터넷에서 가져다 쓰는 방법 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">   
+    <link rel="stylesheet" href="css/main.css">
+    <!-- 브라우저 크기가 1024px이하일 경우 main_medium.css가 적용된다 -->
+    <link rel="stylesheet" media="all and (max-width:1024px)" href="css/main_medium.css">
+    <!-- 브라우저 크기가 768px이하일 경우 main_medium.css가 적용된다 -->
+    <link rel="stylesheet" media="all and (max-width:768px)" href="css/main_small.css">
+
+    <!-- defer : 브라우저가 html을 다 읽으면 실행되게 함. 코드는 순차적으로 해석되기 때문에 js에 쓰인 요소들은 아직 브라우저가 모른다. -->
+    <script defer src="main.js"></script>
+</head>
+<body>
+<div class="body__container"><!--body는 전체적인 구조를 나타내는 태그이기 때문에
+boy에 직접 style을 적용하는 것을 좋지 않으므로 body 대신 사용할 가짜 바디를 만들어준다. +BEM 작명 규칙-->
+ 
+    <!-- 우리는 이 사이트를 각각의 섹션으로 정의하고자 하기 때문에 섹션으로 정의된
+    요소들끼리는 공통된 스타일을 가지고 있을 것이다.-> class=section 부여 -->
+    <!-- HEADER -->
+    <header class="section">
+
+        <!-- header의 contents들을 화면의 중앙으로 몰아 줄 요소 정의 -->
+        <div class="inner clearfix">
+            
+            <div class="menu-group float--left"> <!--header의 왼쪽 영역 담당-->
+                <div class="logo">
+                    <a href="#">GitHub</a>
+                </div>
+                <!-- 보통 메뉴로 사용할 애들은 ul,ol,li 태그르 사용하는 것 권장 -->
+                <ul class="main-menu toggle">
+                    <!-- 특정 페이지로 이동하는 버튼 역할이기 때문에 a tag 사용.
+                    그와중에 ul 안에는 무조건 li또는 ol이 와야하기 때문에 li도 -->
+                    <!-- 이동 링크 없을 경우 임시로 # 넣어줌 -->
+                    <li><a href="#">Personal</a></li>
+                    <li><a href="#">OpenSource</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Explore</a></li>
+                </ul>
+            </div>
+            
+            <div class="sign-group float--right toggle"><!--header의 오른쪽 영역 담당-->
+                <div class="btn-group">
+                    <a href="#" class="btn sign-in">Sign in</a>
+                    <a href="#" class="btn btn--primary sign-up">Sign up</a>
+                </div>
+                <!-- 검색이라는 건 데이터베이스를 검색을 하든 사용자 검색을 하든
+                 고유한 검색을 하게 됨. form은 서버로 제출될 데이터를
+                사용자로부터 입력받는 것이기 때문에 고유해야 함.-> id값 설정 -->
+                <form id="search-form" method="POST" action="">
+                    <input id="search" type="text" class="input--text" placeholder="Search GitHub" >
+                    <input type="submit" value="Submit">
+                </form>
+                <ul class="sub-menu">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div id="toggle-btn">Header Menu Toggle Button</div>
+
+        </div>
+    </header>
+
+    <!--VISUAL-->
+    <section class="section section__visual">
+        <!-- header와 마찬가지로 화면 중앙으로 몰아줄 inner 태그 선언 -->
+        <div class="inner">
+            <div class="summary"><!--단어를 묶기 위해 띄어쓰기 대신 &nbsp이용 묶으면 한 단어 취급해서 자리 없을 경우 자동으로 다음 줄이 되기 떄문-->
+                <!--br태그로 줄 바꾸지 않는 이유는 반응형이 됐을 때 자연스럽게 바껴야 하기 때문.fix보단 유동적으로-->
+                <h2 class="summary__title">How&nbsp;people build&nbsp;software</h2>
+                <p class="summary__description">
+                    Millions of developers use GitHub to build personal projects, support their businesses, and&nbsp;work together on open source technologies.
+                </p>
+            </div>
+            <form id="sign-form" method="POST"" action="">
+                <!-- input은 inline-text라 수평으로 흐름. 나는 수직으로 흐르게 하고 싶어서 div
+                로 감싸려고 했는데 div는 너무 흔해서 css 잘못 적용될 수 있음. 그러므로 ul 사용 -->
+                <ul>
+                    <li><input type="text" class="input--text" placeholder="Pick a username"></li>
+                    <li><input type="email"class="input--text" placeholder="Your email address"></li>
+                    <li>
+                        <input type="password"class="input--text"placeholder="Create a password">
+                        <p class="caption">Use at least one letter, one numeral, and seven characters.</p>
+                    </li>
+                    <li>
+                        <!-- input 이나 button으로 만들면 된다. -->
+                        <button type="submit" class="btn btn--primary">Sign up for GitHub</button>
+                        <p class="caption">By clicking "Sign up for GitHub", you agree to our terms of service and privacy policy. We'll occasionally send you account related emails.</p>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+
+    <!--FEATURE-->
+    <!-- inner 사용 안하는 이유는 요소들이 inner와 상관 없이 가운데 정렬이 되어있고, tile부분은 inner영역을 벗어나기 때문 -->
+    <section class="section section--feature">
+        <div class="summary">
+            <h2 class="summary__title">Welcome home, developers</h2>
+            <p class="summary__description">
+                GitHub fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.
+            </p>
+        </div>
+
+        <div class="video">
+            <div class="video-ratio"> <!--반응형을 위한 요소. 비디오 소스코드 복사본을 감싸준다-->
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/afvT1c1ii0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="tiles">
+            <!-- 개발자 도구에서 확인해보니 tiles는 수평축 모두 사용하고 그 안에 가운데 정렬 존재. 
+            그러므로 inner 필요 -->
+            <div class="inner">
+                <ul class="clearfix">
+                    <li>
+                        <img src="img/feature-tile__build.png" alt="build">
+                        <h3>For everything you build</h3>
+                        <p>Host and manage your code on GitHub. You can keep your work private or share it with the world.</p>
+                    </li>
+                    <li>
+                        <img src="img/feature-tile__work.png" alt="work">
+                        <h3>A better way to work</h3>
+                        <p>From hobbyists to professionals, GitHub helps developers simplify the way they build software.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/feature-tile__projects.png" alt="projects">
+                        <h3>Millions of projects</h3>
+                        <p>GitHub is home to millions of open source projects. Try one out or get inspired to create your own.</p>
+                    </li>
+                    <li>
+                        <img src="img/feature-tile__platform.png" alt="platform">
+                        <h3>One platform, from start to finish</h3>
+                        <p>With hundreds of integrations, GitHub is flexible enough to be at the center of your development process.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHere is -->
+    <section class="section section--where-is">
+        <div class="inner">
+            <div class="summary">
+                <div class="summary__title">Where is GitHub?</div>
+                <div class="summary__description">
+                    GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.
+                </div>
+            </div>
+            <!-- 지도는 api를 이용해 삽입 할 것이라 고유해야 함(==id부여) -->
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- PRICING CARD -->
+    <section class="section section--pricing">
+        <div class="inner">
+            <div class="card">
+                <div class="cell cell1">
+                    <a href="#" class="btn btn--primary">Sign Up for GitHub</a>
+                </div>
+                <div class="cell cell2">
+                        Public projects are always free. Work together across unlimited private repositories for $7 / month.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section">
+        <div class="inner clearfix">
+            <!-- 이 순서는 페이지를 줄였을 때의 순서 -->  
+            <ul class="site-links float--right"> 
+                <li><a href="#">Contact GitHub</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="site-links float--left"> 
+                <li>© 2016 GitHub, Inc.</li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <a href="#" class="logo">
+                <svg version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 16 16"
+                    fill="#ccc">
+                <path fill-rule="evenodd"
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+</div>
+
+<!-- script는 head 또는 body의 가장 밑에 삽입할 수 있다 -->
+<script>
+    // Initialize Google Map.
+    function initMap() {
+  
+      const myLatLng = {
+        lat: 37.782293,
+        lng: -122.391240
+      }
+  
+      const map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        scrollwheel: false,
+        zoom: 18
+      })
+  
+      const marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'GitHub'
+      })
+  
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap" async defer></script>
+</body>
+</html>
