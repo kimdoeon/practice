@@ -5,7 +5,7 @@
      font-weight: 400;
      color : #333;
 }
-a{
+a{ 
     text-decoration: none; /*글자에 줄을 치는 속성 없애겠음. 원래는 글자 밑줄 있었음*/
 }
 
