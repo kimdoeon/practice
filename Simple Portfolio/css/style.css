@@ -1,0 +1,74 @@
+*{
+    font-family: "Malgun Gothic", sans-serif;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+li{
+    list-style: none;
+    padding:0;
+    vertical-align: bottom;
+}
+a{
+    color : inherit;
+}
+._01{ 
+    background: url("../images/a.jpg") no-repeat;
+}
+._02{   
+    background: url("../images/b.jpg") no-repeat;
+}
+._03{
+    background: url("../images/c.jpg") no-repeat;
+}
+.overlay{
+    background:url("../images/16.png");
+    position:absolute;
+    top:0;
+    z-index:1;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+    top:0;
+    z-index:2;
+}
+.contents{
+    color:white;
+    text-align: center;
+}
+
+.contents_name{
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contents_job{
+    font-size : 25px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.contents_list{
+    display: flex;
+    justify-content: center;
+}
+.contents_list li{
+    width: 52px;
+    height: 52px;
+    border:1px solid white;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.contents_list li:last-child{
+    margin-right:0
+}
