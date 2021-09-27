@@ -78,13 +78,21 @@ header .wrapper{
     padding-top : 10px;
     position: relative;
 }
-
+header a{
+    color : var(--color-light-gray-gallery);
+}
+header .var{
+    display: none;
+    font-size: 28px;
+    position:absolute;
+    left:10px;
+}
 header .interact{
     display: flex;
     font-size:var(--font-micro);
     position: absolute;
     top:10px;
-    right: 150px;; 
+    right: 100px;
 }
 header .interact li{
     padding : var(--spacing-small) var(--spacing)
@@ -104,8 +112,8 @@ header .logo{
 }
 header .menu{
     width: 80%;
-    height: 40px;
-    overflow: hidden;
+    min-height: 40px; 
+    /* overflow: hidden; */
     margin : 0 auto;
 }
 header .menu a{
@@ -132,11 +140,17 @@ header .main-menu li a:hover{
     color : var(--color-black);
 }
 header .menu-content{
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding-top : var(--spacing-large);
     font-size: var(--font-smaller);
 }
+/* header .visible{
+    display: flex;
+    justify-content: space-between;
+    padding-top : var(--spacing-large);
+    font-size: var(--font-smaller);
+} */
 header .menu-content li{
     flex-basis: 16.7%;
     text-align: center;
