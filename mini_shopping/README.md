@@ -13,7 +13,9 @@ HTML, CSS, vanila JS
 * 로고 클릭 시 모든 리스트 출력
 * 옷 버튼 클릭 시 해당 카테고리에 해당하는 쇼핑 리스트 출력
 * 색상 버튼 클릭 시 해당 카테고리에 해당하는 쇼핑 리스트 출력
-
+<p align="center">
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b0fc47fc-f47e-4926-ab27-e6356eecd398/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220307%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220307T020606Z&X-Amz-Expires=86400&X-Amz-Signature=3664d8079bfd4e5cf4669ad0e3e1d8a6f9a935df1a7aa206296a808d2c113c38&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" widt="300">
+</p>
 ### 
 ---
 ### ref
