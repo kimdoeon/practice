@@ -85,16 +85,14 @@ button{
     height: 70px;
     margin:15px 0px;
     background-color: var(--color-white);
-    /* X축(즉 가로 축)으로 -45도 회전. 즉 뒤로 넘어감. 
-    https://seulbinim.github.io/WSA/transform.html#transform-%EC%86%8D%EC%84%B1*/
+    /* X축(즉 가로 축)으로 -45도 회전. 즉 앞로 넘어감. */
     transform: rotateX(-45deg);
     /* 그림자 효과.  */
     /* 첫번째 값 : 그림지의 좌 우 치우침 설정. 양수 = 오른쪽, 음수=왼쪽. 0이므로 가운데
     두번째 값: 그림자의 상하 치우침 설정. 영수 : 아래, 음수 : 위
     세번째 값: 흐림 반경(blur radius) 음수 불가능. 값이 클수록 흐려지고 0에 수렴할수록 선명
     네번째 값: 그림자 확산 거리(spread distance)양수 : 그림자 전방위로 확대, 음수 : 그림자 크기 감소(근데 딱히 잘 모르게슴)
-    다섯번째 값 : 그림자 색상 지정
-    https://www.tabmode.com/homepage/box-shadow.html*/ 
+    다섯번째 값 : 그림자 색상 지정*/
     box-shadow: 0 3px 10px rgb(255 255 255 / 70%);
 }
 .theater .seat:hover{
