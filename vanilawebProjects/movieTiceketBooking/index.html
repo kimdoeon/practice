@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>영화 예매 프로그램</title>
+</head>
+<body> 
+    <!-- MOVIE SELECT -->
+    <section class="select">
+        영화 선택:
+        <select name="movies" id="movies">
+            <option value="clementine" data-price = 10000 >클레멘타인(10000)</option>
+            <option value="gwanghae" data-price = 8000>광해(8000)</option>
+            <option value="thePoliceman'sLineag" data-price = 12000>경관의 피(12000)</option>
+            <option value="sharper" data-price = 9000>타짜(9000)</option>    
+        </select>
+    </section>
+
+    <!-- SEAT STATUS -->
+    <ul class="status">
+        <li>
+            <button></button>
+            N/A
+        </li>
+        <li>
+            <button></button>
+            Selected
+        </li>
+        <li>
+            <button></button>
+            Occupied
+        </li>
+    </ul>
+
+    <!-- THEATER STATUS -->
+    <section class="theater">
+        <div class="screen"></div>
+        <div class="seats">
+            <div class="row">
+                <button class="seat"></button><button class="seat"><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button>
+            </div>
+            <div class="row">
+                <button class="seat"></button><button class="seat"><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button>
+            </div>
+            <div class="row">
+                <button class="seat"></button><button class="seat"><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button>
+            </div>
+            <div class="row">
+                <button class="seat"></button><button class="seat"><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button>
+            </div>
+            <div class="row">
+                <button class="seat"></button><button class="seat"><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button>
+            </div>
+            <div class="row">
+                <button class="seat"></button><button class="seat"><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button>
+            </div>
+    </section>
+    <!-- PRICE & SEATS -->
+    <section class="seatAndPrice">
+        <!-- JS -->
+    </section>
+
+
+</body>
+    <script src="./main.js"></script>
+</html>
