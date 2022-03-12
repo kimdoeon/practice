@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+     <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <script defer src="main.js"></script>
+</head>
+<body> 
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube""></i>
+            <span class="title">Youtube</span>
+        </div>
+        <ul class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </ul>
+    </header>
+
+    <!-- VIDEO PLAYER -->
+    <div class="player">
+        <div class="video-ratio">
+            <video controls src="/Youtube example/video/video.mp4">video</video>
+        </div>
+    </div>
+
+    <!-- MEDIA QUERY -->
+    <div class="media">
+        <!-- VIDEO DESCRIPTION -->
+        <div class="description">
+            <ul class="hashtags">
+                <li class="items--hashtag">#DreamCoding</li> 
+                <li class="items--hashtag">#DreamCoders</li>
+                <li class="items--hashtag">#Ellie</li>
+            </ul>
+            <div class="titleAndBtn">
+                <span class="visible title">
+                    Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript 드림코딩과 함께하는 프론트엔드 실전 입문편
+                </span>
+                <button class="toggleBtn btnMore">
+                    <i class="fas fa-caret-down"></i>
+                </button>
+            </div>
+            <span class="viewAndTime">
+                1M views 1 month ago
+            </span>
+            <ul class="btns">
+                <li class="btn">
+                    <button class="item">
+                        <i class="active fas fa-thumbs-up"></i>
+                        <span class="btnInfo">
+                            1K
+                        </span>
+                    </button>
+                </li>
+                <li class="btn">
+                    <button class="item">
+                        <i class="fas fa-thumbs-down"></i>
+                        <span class="btnInfo">
+                            0
+                        </span>
+                    </button>
+                </li>
+                <li class="btn">
+                    <button class="item">
+                        <i class="fas fa-share"></i>
+                        <span class="btnInfo">
+                            Share
+                        </span>
+                    </button>
+                </li>
+                <li class="btn">
+                    <button class="item">
+                        <i class="fas fa-plus"></i>
+                        <span class="btnInfo">
+                            Save
+                        </span>
+                    </button>
+                </li>
+                <li class="btn">
+                    <button class="item">
+                        <i class="fab fa-font-awesome-flag"></i>
+                        <span class="btnInfo">
+                            Report
+                        </span>
+                    </button>
+                </li>
+            </ul>
+            <div class="info">
+                <div class="youtuberInfo">
+                    <img src="./images/avatar.png" alt="avatarImg" class="charactor">
+                    <div class="info-detail">
+                        <span class="name">
+                            드림코딩 by 엘리
+                        </span>
+                        <span class="subscriber">
+                            1M subscribers
+                        </span>
+                    </div>
+                </div>
+                <button class="btn">
+                    subscribe
+                </button>
+            </div>
+        </div>
+        
+        <!-- UP NEXT -->
+        <div class="upNext">
+            <span class="title">Up next</span>
+            <ul class="videos">
+                <li class="item--videos">
+                    <div class="image"><img src="images/img1.png" alt="img1"></div>
+                    <div class="info--upNext">
+                        <span class="title">
+                            프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편 강의를 시작합니다 ⭐️ (HTML, CSS, Javascript + 실전 프로젝트)
+                        </span>
+                        <span class="name">
+                            드림코딩 by 엘리
+                        </span>
+                        <span class="views">
+                            82k views
+                        </span>
+                    </div>
+                    <button>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+                <li class="item--videos">
+                    <div class="image"><img src="images/img2.png" alt="img2"></div>
+                    <div class="info--upNext">
+                        <span class="title">
+                            HTML 기초, React 할때 꼭 필요한 팁! 쉽다고 무시하면 안돼요 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+                        </span>
+                        <span class="name">
+                            드림코딩 by 엘리
+                        </span>
+                        <span class="views">
+                            82k views
+                        </span>
+                    </div>
+                    <button>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+                <li class="item--videos">
+                    <div class="image"><img src="images/img3.png" alt="img3"></div>
+                    <div class="info--upNext">
+                        <span class="title">
+                            HTML 태그 완성, 웹 포트폴리오 만들기 전에 꼭 보세요 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+                        </span>
+                        <span class="name">
+                            드림코딩 by 엘리
+                        </span>
+                        <span class="views">
+                            82k views
+                        </span>
+                    </div>
+                    <button>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
