@@ -2,7 +2,7 @@
 // 모듈화
 (function(window, document){
     'use strict';
-    //요소 담는 경우 보통 $붙임. 안붙여도 됨
+    //요소 담는 경우 보통 $붙임. 안붙여도 됨 
     //toggle 클래스 가진 요소 전부 탐색
     const $toggles = document.querySelectorAll('.toggle');//NodeList라는 유사 배열 형태
     // toggle-btn 아이디 가진 요소 전부 탐색

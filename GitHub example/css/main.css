@@ -76,7 +76,7 @@ a{
     float: left;
 }
 /* header의 오른쪽 메뉴 */
-.float--right{
+.float--right{ 
     float: right;
 }
 /* SUMMARY */
